@@ -1,9 +1,12 @@
 import React from 'react';
-
+import { Link, NavLink } from 'react-router-dom';
+import logo from '../../assets/logo-custom-made-2-min.webp'
+// All jewelry, My Jewelry, Add jewelry, Blogs, and User profile picture
 const Header = () => {
+    const user = false;
     return (
-        <div>
-            <div className="navbar bg-gray-200">
+        <div className='max-w-screen-xl mx-auto py-6'>
+            <div className="navbar bg-neutral-50">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -24,28 +27,53 @@ const Header = () => {
                             <li><a>Item 3</a></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                    <img className='w-1/4 px-8' src={logo} alt="" />
+                    <a className="btn btn-ghost font-extrabold text-xl">DiamondCut</a>
                 </div>
+                {/* Large view section ------------------------------------------------------- */}
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        <li tabIndex={0}>
-                            <a>
-                                Parent
-                                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
-                            </a>
-                            <ul className="p-2">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </li>
-                        <li><a>Item 3</a></li>
+                    <ul className="menu menu-horizontal px-1 gap-4 font-semibold ">
+                        <NavLink to="/">Home</NavLink>
+                        <NavLink to="/allJewelry">All Jewelry</NavLink>
+                        {
+                            user &&
+                            <NavLink to="/myJewelry">My Jewelry</NavLink>
+                        }
+                        {
+                            user &&
+                            <NavLink to="/addJewelry">Add Jewelry</NavLink>
+                        }
+
+                        <NavLink to="/blogs">Blogs</NavLink>
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Get started</a>
+
+                <div className="navbar-end flex flex-row ">
+                    <div className="tooltip tooltip-left" data-tip={user?.displayName}>
+                        {
+                            user &&
+                            <img className='rounded-full pe-2'
+                                style={{ width: "50px", height: "50px" }}
+                                src={user?.photoURL} alt="" />
+                        }
+                    </div>
+
+                    {
+                        user ?
+                            <button className="btn">Logout</button> :
+                            <div className='grid grid-cols-2 divide-x'>
+                                <Link to='/register'>
+                                    <button className="btn btn-link text-yellow-700">Register</button>
+                                </Link>
+                                <Link to='/login'>
+                                    <button className="btn btn-link text-yellow-700">Login</button>
+                                </Link>
+                            </div>
+                    }
                 </div>
             </div>
+
+
         </div>
     );
 };
