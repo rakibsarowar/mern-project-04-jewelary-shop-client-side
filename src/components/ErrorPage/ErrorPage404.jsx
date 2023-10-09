@@ -4,7 +4,7 @@ import img from '../../assets/errorpage.png'
 
 const ErrorPage404 = () => {
 
-    const { error, status } = useRouteError()
+    const { error} = useRouteError()
 
     return (
         <>
@@ -12,10 +12,7 @@ const ErrorPage404 = () => {
                 <div className='flex justify-center'>
                     <img className='img-fluid w-25' src={img} alt="" />
                 </div>
-                <h2 className='mt-12 text-center'>
-                    <span className=''>Error</span> {status || 404}
-                </h2>
-                <p className='text-2xl font-bold text-center'>
+                <p className='text-2xl font-bold text-center mt-12'>
                     {error?.message}
                 </p>
 
