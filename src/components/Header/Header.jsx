@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/logo-custom-made-2-min.webp'
+import { authContext } from '../AuthProvider/AuthProvider';
 // All jewelry, My Jewelry, Add jewelry, Blogs, and User profile picture
 const Header = () => {
-    const user = false;
+    const { user, logOut } = useContext(authContext);
+
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch(error => console.log(error))
+    }
     return (
         <div className='container mx-auto py-6'>
             <div className="navbar bg-neutral-50">
@@ -19,10 +26,6 @@ const Header = () => {
                                     Parent
                                     <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
                                 </a>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
                             </li>
                             <li><a>Item 3</a></li>
                         </ul>
@@ -39,11 +42,6 @@ const Header = () => {
                             user &&
                             <NavLink to="/myJewelry">My Jewelry</NavLink>
                         }
-                        {
-                            user &&
-                            <NavLink to="/addJewelry">Add Jewelry</NavLink>
-                        }
-
                         <NavLink to="/blogs">Blogs</NavLink>
                     </ul>
                 </div>
@@ -60,7 +58,7 @@ const Header = () => {
 
                     {
                         user ?
-                            <button className="btn">Logout</button> :
+                            <button onClick={handleLogOut} className="btn">Logout</button> :
                             <div className='grid grid-cols-2 divide-x'>
                                 <Link to='/register'>
                                     <button className="btn btn-link text-yellow-700">Register</button>
