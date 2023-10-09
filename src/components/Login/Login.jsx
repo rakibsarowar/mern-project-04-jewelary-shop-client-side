@@ -1,8 +1,7 @@
 import React, { useContext, useState } from 'react';
-import { authContext } from './providers/AuthProvider';
 import { signOut } from 'firebase/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import Header from './pages/Header';
+import { authContext } from '../AuthProvider/AuthProvider';
 
 const Login = () => {
     const { signIn, user, signInWithGoogle } = useContext(authContext);
@@ -50,7 +49,6 @@ const Login = () => {
 
     return (
         <div>
-            <Header></Header>
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col">
                     <div className="text-center">
