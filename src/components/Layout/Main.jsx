@@ -5,6 +5,7 @@ import Hero from '../Hero/Hero';
 import Login from '../Login/Login';
 import Footer from '../Footer/Footer';
 import NewCollection from '../New Collection/NewCollection';
+import NewReleases from '../NewReleases/NewReleases';
 
 const Main = () => {
     return (
@@ -12,6 +13,7 @@ const Main = () => {
             <Header></Header>
             <Hero></Hero>
             <NewCollection></NewCollection>
+            <NewReleases></NewReleases>
             <Login></Login>
             <Footer></Footer>
             <Outlet></Outlet>
