@@ -7,7 +7,7 @@ const NewReleases = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/jewelrys?limit=10`)
+        fetch(`https://jewelry-pink.vercel.app/jewelrys?limit=10`)
             .then((res) => res.json())
             .then((result) => {
                 console.log(result);
