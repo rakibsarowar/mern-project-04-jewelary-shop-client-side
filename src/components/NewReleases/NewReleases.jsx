@@ -7,7 +7,7 @@ const NewReleases = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:5000/jewelrys?limit=6`)
+        fetch(`http://localhost:5000/jewelrys?limit=10`)
             .then((res) => res.json())
             .then((result) => {
                 console.log(result);
@@ -18,9 +18,9 @@ const NewReleases = () => {
     return (
         <div>
             <h1 className='text-4xl mt-32 pb-10 text-center'>New Releases</h1>
-            <p className='text-center'>Wanna make your partner happy? Lets drive</p>
+            <p className='text-center mb-16'>Wanna make your partner happy? Lets drive</p>
 
-            <div className='grid grid-cols-4 gap-4'>
+            <div className='grid grid-cols-4 gap-4 px-8'>
                 {
                     jewelrys?.map((jewelry, index) => <SingleReleaseItem
                         key={index}
