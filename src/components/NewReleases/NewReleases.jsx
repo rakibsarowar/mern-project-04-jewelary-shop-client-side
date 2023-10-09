@@ -16,7 +16,7 @@ const NewReleases = () => {
 
     }, []);
     return (
-        <div>
+        <div className='container mx-auto'>
             <h1 className='text-4xl mt-32 pb-10 text-center'>New Releases</h1>
             <p className='text-center mb-16'>Wanna make your partner happy? Lets drive</p>
 

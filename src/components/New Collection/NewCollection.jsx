@@ -7,7 +7,7 @@ import photo5 from '../../assets/product-05.webp'
 
 const NewCollection = () => {
     return (
-        <div>
+        <div className='container mx-auto'>
             <h1 className='text-4xl pb-10 text-center'>Shop Collection</h1>
             <p className='text-center'>Welcome to our shop! Lets grab some unique items for your love.</p>
             <div className='flex flex-row mt-12'>

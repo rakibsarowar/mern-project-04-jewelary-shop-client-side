@@ -4,7 +4,7 @@ import photo from '../../assets/ring1.png';
 const Hero = () => {
     return (
         <div>
-            <div className="hero min-h-screen bg-neutral-50">
+            <div className="container mx-auto hero min-h-screen bg-neutral-50">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <img src={photo} className="max-w-lg" />
                     <div>

@@ -5,7 +5,7 @@ import logo from '../../assets/logo-custom-made-2-min.webp'
 const Header = () => {
     const user = false;
     return (
-        <div className='max-w-screen-xl mx-auto py-6'>
+        <div className='container mx-auto py-6'>
             <div className="navbar bg-neutral-50">
                 <div className="navbar-start">
                     <div className="dropdown">
