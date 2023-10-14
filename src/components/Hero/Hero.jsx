@@ -15,7 +15,7 @@ const Hero = () => {
                             <p className="text-yellow-700 font-semibold pb-8">2023 COLLECTIONS</p>
                             <h1 className="text-8xl font-bold pb-10">Sparkle With Our Unique Jewelry</h1>
                             <p className="font-semibold pb-8">Discover our new 2023 warmth and shine collection that will delight you at any time. Visit our store and see the collection!</p>
-                            <button className="btn btn-active btn-neutral py-4">Go to the Shop</button>
+                            <button className="btn btn-active btn-neutral rounded-none py-4">Go to the Shop</button>
                         </div>
                     </div>
                 </div>

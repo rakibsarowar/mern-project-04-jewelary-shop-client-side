@@ -17,7 +17,7 @@ const NewReleases = () => {
     }, []);
     return (
         <div className='container mx-auto'>
-            <h1 className='text-4xl mt-32 pb-6 text-center'>New Releases</h1>
+            <h1 className='text-4xl font-bold mt-32 pb-6 text-center'>New Releases</h1>
             <p className='text-center mb-16'>Wanna make your partner happy? Lets drive and find out best.</p>
 
             <div className='grid grid-cols-4 gap-4 px-8'>
