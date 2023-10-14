@@ -3,7 +3,7 @@ import React from 'react';
 const EmailInfo = () => {
     return (
         <div>
-            <div className='bg-orange-100'>
+            <div className='bg-orange-50 py-16'>
                 <h1 className='text-4xl font-bold pb-6 text-center py-12'>Receive Our News In Your Email</h1>
                 <p className='text-center pb-10'>Sign up to receive offers for new products and updates</p>
                 <div className='text-center py-8'>
