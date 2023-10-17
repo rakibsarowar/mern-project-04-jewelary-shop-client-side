@@ -10,7 +10,7 @@ const FooterContact = () => {
                     <div className='col-start-1 col-end-5 border-4 border-yellow-700 text-center m-16 p-12'>
                         <img className='w-11/12' src={image} alt="" />
                         <p className='text-white text-3xl'>18kt White Gold Wedding Ring For $2,000</p>
-                        <button className="btn btn-active rounded-none btn-warning px-20 py-4 mt-8">Buy now</button>
+                        <button className="btn btn-active rounded-none border-none bg-yellow-700 px-24 py-4 mt-8">Buy now</button>
                     </div>
 
                     {/* box2---------------------------------- */}
