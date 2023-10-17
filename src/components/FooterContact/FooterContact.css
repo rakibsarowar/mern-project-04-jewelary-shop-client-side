@@ -2,17 +2,12 @@
 /* CSS */
 .MainContainer {
     position: relative;
-    background: url('../../assets/background.jpg') center/cover no-repeat ;
-    width: 100%;
-    height: 100%; /* Set the desired height */
+    background: 
+        /* top, transparent */
+        linear-gradient(rgba(46,47,63,0.9) 0%, rgba(46,47,63,0.9) 100%),
+        /* bottom, image */
+    url('../../assets/background.jpg');
+    background-size: cover;  
+    background-repeat: no-repeat;
   }
   
-  .MainContainer::before {
-    content: "";
-    background: rgba(46,47,63,0.9); /* Black background with 0.5 opacity */
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
