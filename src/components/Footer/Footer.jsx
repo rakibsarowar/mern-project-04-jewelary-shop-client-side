@@ -4,7 +4,7 @@ import img from '../../assets/logo-custom-made-2-min.webp'
 const Footer = () => {
     return (
         <div>
-            <footer className="footer footer-center p-10 text-white bg-gray-900 rounded">
+            <footer className="footer footer-center p-10 text-white rounded">
                 <aside>
                     <p>Copyright © 2023 - All right reserved by DiamondCut</p>
                 </aside>

@@ -5,6 +5,7 @@ import NewReleases from '../NewReleases/NewReleases';
 import DisplayComponent from '../DisplayComponent/DisplayComponent';
 import DisplayComponent2 from '../DisplayComponent2/DisplayComponent2';
 import EmailInfo from '../EmailInfo/EmailInfo';
+import FooterContact from '../FooterContact/FooterContact';
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
             <NewCollection></NewCollection>
             <NewReleases></NewReleases>
             <EmailInfo></EmailInfo>
+            <FooterContact></FooterContact>
         </div>
     );
 };
