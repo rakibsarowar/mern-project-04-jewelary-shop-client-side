@@ -6,8 +6,10 @@ import Footer from '../Footer/Footer';
 
 const Contact = () => {
     return (
-        <div>
-            <Header></Header>
+        <div className='relative z-0'>
+            <div className='absolute z-10'>
+                <Header></Header>
+            </div>
             <div className='Head h-96 flex justify-center items-center'>
                 <h1 className='text-5xl text-center '>Contact Us</h1>
             </div>
@@ -37,7 +39,7 @@ const Contact = () => {
                     <p className='text-sm underline'>CONTACT US</p>
                 </div>
             </div>
-            
+
             <FooterContact></FooterContact>
             <Footer></Footer>
         </div>
