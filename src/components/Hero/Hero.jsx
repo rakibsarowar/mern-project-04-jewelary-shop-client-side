@@ -6,7 +6,7 @@ const Hero = () => {
     
     return (
         <div>
-            <div className="hero min-h-screen bg-neutral-100 lg:-mt-24">
+            <div className="hero min-h-screen bg-neutral-100 xl:-mt-24">
                 <div>
                 <div className='container mx-auto'>
                     <div className="hero-content flex-col lg:flex-row-reverse">
