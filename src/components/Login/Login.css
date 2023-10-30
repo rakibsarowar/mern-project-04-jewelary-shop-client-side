@@ -1,0 +1,9 @@
+.diamond{
+    max-width: 150px;
+    position: absolute;
+    top: -18px; /* Position 50px from the top */
+    left: -50px; /* Position 50px from the left */
+}
+.card-body{
+    position: relative;
+}
