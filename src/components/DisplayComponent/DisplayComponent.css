@@ -1,0 +1,15 @@
+.box1{
+    position: relative;
+    background: linear-gradient(rgba(46,47,63,0.9) 0%, rgba(46,47,63,0.9) 100%),
+    url("../../assets/background-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box2{
+    position: relative;
+    background: linear-gradient(rgba(46,47,63,0.9) 0%, rgba(46,47,63,0.9) 100%),
+    url('../../assets/background-3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
