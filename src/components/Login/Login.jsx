@@ -49,22 +49,19 @@ const Login = () => {
 
     return (
         <div>
-            <div className="hero min-h-screen ">
-                <div className="hero-content flex-col">
-                    <div className="text-center">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className='text-center font-bold'>{error}</p>
-                        {
-                            user && 
-                            <p className='text-center font-bold my-4'>Yahoo! you are logged in! </p> 
-                        }
-                    </div>
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+            <div className="hero min-h-screen">
+                <div className="w-full h-screen flex-col bg-[#3e3d52]">
+
+                    <div className="card rounded-none w-2/6 flex-shrink-0 mx-auto shadow-2xl bg-[#343242]">
                         <div className="card-body">
+                            <div className="text-center">
+                                <h1 className="text-5xl font-bold text-white">Login now!</h1>
+
+                            </div>
                             <form onSubmit={handleLogin}>
                                 <div className="form-control">
                                     <label className="label">
-                                        <span className="label-text">Email</span>
+                                        <span className="label-text">Email Address</span>
                                     </label>
                                     <input type="text" name='email' placeholder="email" className="input input-bordered" required />
                                 </div>
