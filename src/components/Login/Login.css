@@ -1,9 +1,20 @@
 .diamond{
     max-width: 150px;
     position: absolute;
-    top: -18px; /* Position 50px from the top */
-    left: -50px; /* Position 50px from the left */
+    top: -18px; 
+    left: -50px; 
 }
+.diamond-1{
+    max-width: 100px;
+    position: absolute;
+    bottom: -10px; 
+    right: -10px; 
+}
+
+.image-down{
+    transform: rotate(20deg)
+}
+
 .card-body{
     position: relative;
 }

@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { authContext } from '../AuthProvider/AuthProvider';
 import image1 from "../../assets/Login2.png"
+import image2 from "../../assets/Login3.png"
 import "./Login.css"
 
 
@@ -55,13 +56,13 @@ const Login = () => {
 
                 <div className="card rounded-none w-2/6 flex-shrink-0 mx-auto shadow-2xl bg-[#343242]">
                     <div className='diamond'>
-                    <img src={image1} alt="" />
+                        <img src={image1} alt="" />
                     </div>
                     <div className="card-body">
-                        <div className="text-center">
-                            <h1 className="text-5xl font-bold text-white">Login now!</h1>
+                        <div className="text-center mt-10 mb-6">
+                            <h1 className="text-4xl font-bold text-white">Login now!</h1>
                         </div>
-                        <form onSubmit={handleLogin}>
+                        <form onSubmit={handleLogin} className='px-8'>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-white">Email Address</span>
@@ -77,18 +78,24 @@ const Login = () => {
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
-                            <div className="form-control mt-6">
-                                <button className="btn btn-primary">Login</button>
+                            <div className="form-control">
+                                <button className="btn btn-active rounded-none border-none bg-[#b98d58] py-4">Login</button>
                             </div>
                         </form>
 
                     </div>
-                    <div className='text-center'>
+                    <div className='text-center text-white'>
                         Or,
                     </div>
-                    <button onClick={handleGoogleSignIn} className="btn btn-primary m-4">Google</button>
-                    <div className="text-center">
+                    <div className='px-16 mb-10'>
+                        <button onClick={handleGoogleSignIn} className="btn btn-active rounded-none border-none bg-[#b98d58] px-24 py-4 mt-8">Google</button>
+                    </div>
+
+                    <div className="text-center text-white mb-8">
                         <h1 className="p-4">New member? <Link className='font-bold underline' to="/register">Register</Link> here</h1>
+                    </div>
+                    <div className='diamond-1'>
+                        <img className='image-down' src={image2} alt="" />
                     </div>
                 </div>
             </div>
