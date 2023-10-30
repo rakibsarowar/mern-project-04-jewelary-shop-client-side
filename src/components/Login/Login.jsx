@@ -54,7 +54,7 @@ const Login = () => {
         <div>
             <div className="w-full h-screen flex flex-col justify-center bg-[#3e3d52]">
 
-                <div className="card rounded-none w-2/6 flex-shrink-0 mx-auto shadow-2xl bg-[#343242]">
+                <div className="MainContainer card rounded-none w-1/4 flex-shrink-0 mx-auto shadow-2xl">
                     <div className='diamond'>
                         <img src={image1} alt="" />
                     </div>
