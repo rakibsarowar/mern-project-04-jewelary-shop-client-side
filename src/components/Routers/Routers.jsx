@@ -6,6 +6,7 @@ import ErrorPage404 from '../ErrorPage/ErrorPage404';
 import Login from '../Login/Login';
 import Register from '../Register/Register';
 import Contact from '../Contact/Contact';
+import SingleProductPage from '../SingleProductPage/SingleProductPage';
 
 const router = createBrowserRouter([
     {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
         element: <Register></Register>,
         errorElement: <ErrorPage404></ErrorPage404>
     },
+    {
+      path: '/shop-single-Product-info',
+      element: <SingleProductPage></SingleProductPage>,
+      errorElement: <ErrorPage404></ErrorPage404>
+  },
     
   ]);
 
