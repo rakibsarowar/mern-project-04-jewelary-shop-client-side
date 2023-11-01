@@ -42,7 +42,8 @@ const Header = () => {
                             user &&
                             <NavLink to="/myJewelry">My Jewelry</NavLink>
                         }
-                        <NavLink to="/blogs">Blogs</NavLink>
+                        <NavLink to="/about-us">About Us</NavLink>
+                        <NavLink to="/contact">Contact Us</NavLink>
                     </ul>
                 </div>
 
