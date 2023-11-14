@@ -3,8 +3,14 @@ import Header from '../Header/Header';
 import FooterContact from '../FooterContact/FooterContact';
 import Footer from '../Footer/Footer';
 import image1 from '../../assets/SingleProductinfo-3.jpg'
+import { useLoaderData } from 'react-router-dom';
 
 const SingleProductPage = () => {
+    const locketInfo = useLoaderData();
+    const {_id, name, quantity, supplier, email, price, rating, category, details, photo } = locketInfo;
+    console.log(_id)
+
+
     return (
         <>
             <div className='w-full flex flex-row justify-center'>

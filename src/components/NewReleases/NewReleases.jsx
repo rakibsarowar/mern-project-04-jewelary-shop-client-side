@@ -7,7 +7,8 @@ const NewReleases = () => {
 
 
     useEffect(() => {
-        fetch(`https://jewelry-pink.vercel.app/jewelrys?limit=10`)
+        // fetch(`https://jewelry-pink.vercel.app/jewelrys?limit=10`)
+        fetch(`https://jewelry-ndu459ghx-rakibsarowar.vercel.app/locket`)
             .then((res) => res.json())
             .then((result) => {
                 console.log(result);
@@ -22,9 +23,9 @@ const NewReleases = () => {
 
             <div className='grid grid-cols-4 gap-4 px-8'>
                 {
-                    jewelrys?.map((jewelry, index) => <SingleReleaseItem
+                    jewelrys?.map((data, index) => <SingleReleaseItem
                         key={index}
-                        jewelry={jewelry}
+                        data={data}
                     ></SingleReleaseItem>
                     )
                 }

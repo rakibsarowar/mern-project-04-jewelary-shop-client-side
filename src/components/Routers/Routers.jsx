@@ -37,11 +37,20 @@ const router = createBrowserRouter([
     element: <Register></Register>,
     errorElement: <ErrorPage404></ErrorPage404>
   },
+
   {
     path: '/shop-single-Product-info',
-    element: <SingleProductPage></SingleProductPage>,
-    errorElement: <ErrorPage404></ErrorPage404>
-  },
+    errorElement: <ErrorPage404></ErrorPage404>,
+    children: [
+      {
+          path: ':id',
+          element:<SingleProductPage></SingleProductPage>,
+          loader: ({params}) => fetch(`https://jewelry-ndu459ghx-rakibsarowar.vercel.app/locket/${params.id}`)
+          .then(res => res.json())
+      }
+    ]
+    },
+  
   {
     path: '/about-us',
     element: <AboutUs></AboutUs> ,
