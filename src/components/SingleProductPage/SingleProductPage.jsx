@@ -7,9 +7,26 @@ import { useLoaderData } from 'react-router-dom';
 
 const SingleProductPage = () => {
     const locketInfo = useLoaderData();
-    const {_id, name, quantity, supplier, email, price, rating, category, details, photo } = locketInfo;
-    console.log(_id)
-
+        // Destructure the data
+        const {
+            _id,
+            product_name,
+            image,
+            product_id,
+            category,
+            gross_weight,
+            availability,
+            price,
+            ships_within,
+            shipping_charges,
+            product_details,
+            product_information,
+            product_specifications,
+            metal_details,
+            diamond_details,
+            delivery,
+            ratings_and_reviews
+        } = locketInfo ;
 
     return (
         <>
@@ -20,11 +37,11 @@ const SingleProductPage = () => {
             </div>
             <div className='relative'>
                 <div className='Head h-96 flex justify-center items-center'>
-                    <h1 className='text-5xl text-center '>Product Details</h1>
+                    <h1 className='text-5xl text-center '>product_details</h1>
                 </div>
                 <div className='container mx-auto grid grid-cols-2 gap-8 py-20'>
                     <div className='box01 text-center'>
-                        <img src={image1} alt="" />
+                        <img src={image} alt="" />
                     </div>
 
                     <div>

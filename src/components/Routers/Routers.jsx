@@ -45,7 +45,7 @@ const router = createBrowserRouter([
       {
           path: ':id',
           element:<SingleProductPage></SingleProductPage>,
-          loader: ({params}) => fetch(`https://jewelry-ndu459ghx-rakibsarowar.vercel.app/locket/${params.id}`)
+          loader: ({params}) => fetch(`https://jewelry-4ljouzk9i-rakibsarowar.vercel.app/locket/${params.id}`)
           .then(res => res.json())
       }
     ]
